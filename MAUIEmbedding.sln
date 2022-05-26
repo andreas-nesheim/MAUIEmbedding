@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32519.111
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUIEmbedding.iOS", "MAUIEmbedding.iOS\MAUIEmbedding.iOS.csproj", "{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUIEmbedding.Droid", "MAUIEmbedding.Droid\MAUIEmbedding.Droid.csproj", "{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,12 @@ Global
 		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
