@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32519.111
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUIEmbedding.iOS", "MAUIEmbedding.iOS\MAUIEmbedding.iOS.csproj", "{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE1B9BB3-C2EA-43A9-8ED3-43329DA415CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1019FAC7-C83F-4E4A-8E19-E809CFAF2011}
+	EndGlobalSection
+EndGlobal
