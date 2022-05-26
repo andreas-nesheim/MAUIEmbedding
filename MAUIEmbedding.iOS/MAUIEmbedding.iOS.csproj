@@ -7,4 +7,7 @@
 		<ImplicitUsings>true</ImplicitUsings>
 		<SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\MAUIEmbedding.Pages\MAUIEmbedding.Pages.csproj" />
+	</ItemGroup>
 </Project>
