@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUIEmbedding.iOS", "MAUIEm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUIEmbedding.Droid", "MAUIEmbedding.Droid\MAUIEmbedding.Droid.csproj", "{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUIEmbedding.Pages", "MAUIEmbedding.Pages\MAUIEmbedding.Pages.csproj", "{A079791A-5A2E-4602-9A23-DCEB4269EAB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3B74B4F2-1BFC-475E-99A8-0854E14B7CF4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A079791A-5A2E-4602-9A23-DCEB4269EAB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A079791A-5A2E-4602-9A23-DCEB4269EAB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A079791A-5A2E-4602-9A23-DCEB4269EAB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A079791A-5A2E-4602-9A23-DCEB4269EAB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
