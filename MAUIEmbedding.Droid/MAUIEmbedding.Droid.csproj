@@ -10,4 +10,7 @@
 		<ApplicationVersion>1</ApplicationVersion>
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 	</PropertyGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\MAUIEmbedding.Pages\MAUIEmbedding.Pages.csproj" />
+	</ItemGroup>
 </Project>
