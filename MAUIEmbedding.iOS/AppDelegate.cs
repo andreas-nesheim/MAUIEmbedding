@@ -1,3 +1,9 @@
+using Foundation;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui;
+using UIKit;
+using Microsoft.Maui.Embedding;
+
 namespace MAUIEmbedding.iOS
 {
     [Register("AppDelegate")]
@@ -9,8 +15,30 @@ namespace MAUIEmbedding.iOS
             set;
         }
 
+        public static MauiContext MauiContext;
+
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
+            //Setup MauiBits
+            var builder = MauiApp.CreateBuilder();
+
+            //Add Maui Controls
+            builder.UseMauiEmbedding<Application>();
+
+            //iOS/Mac need to register the Window
+            builder.Services.Add(new Microsoft.Extensions.DependencyInjection.ServiceDescriptor(typeof(UIKit.UIWindow), Window));
+
+            var mauiApp = builder.Build();
+
+            //Create and save a Maui Context. This is needed for creating Platform UI
+            MauiContext = new MauiContext(mauiApp.Services);
+
+
+
+            // TODO: Create MauiPage here and set as RootViewController?
+
+
+
             // create a new window instance based on the screen size
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
 

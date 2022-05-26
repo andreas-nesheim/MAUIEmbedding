@@ -1,3 +1,6 @@
+using Foundation;
+using UIKit;
+
 namespace MAUIEmbedding.iOS
 {
     [Register("SceneDelegate")]
