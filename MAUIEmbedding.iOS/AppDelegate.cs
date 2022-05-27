@@ -66,7 +66,7 @@ namespace MAUIEmbedding.iOS
 
             // Using the old CreateViewController() method doesn't seem to work.
             // The app throws an error saying that you need to call Forms.Init()...
-            var mauiCompatCtrl = myMauiPage.CreateViewController();
+            //var mauiCompatCtrl = myMauiPage.CreateViewController();
 
             Window.RootViewController = mauiCtrl;
 
