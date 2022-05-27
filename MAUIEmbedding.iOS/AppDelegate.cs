@@ -1,10 +1,9 @@
 using Foundation;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui;
-using UIKit;
-using Microsoft.Maui.Embedding;
 using MAUIEmbedding.Pages;
+using Microsoft.Maui.Controls.Compatibility.Platform.iOS;
+using Microsoft.Maui.Embedding;
 using Microsoft.Maui.Platform;
+using UIKit;
 
 namespace MAUIEmbedding.iOS
 {
@@ -60,8 +59,19 @@ namespace MAUIEmbedding.iOS
 
             //Turn the Maui page into an iOS UIView
             var view = myMauiPage.ToPlatform(MauiContext);
-
             //vc.View!.AddSubview(view);
+
+            // We can also turn it into a UIViewController
+            var mauiCtrl = myMauiPage.ToUIViewController(MauiContext);
+
+            // Using the old CreateViewController() method doesn't seem to work.
+            // The app throws an error saying that you need to call Forms.Init()...
+            var mauiCompatCtrl = myMauiPage.CreateViewController();
+
+            Window.RootViewController = mauiCtrl;
+
+            // make the window visible
+            Window.MakeKeyAndVisible();
 
             return true;
         }
