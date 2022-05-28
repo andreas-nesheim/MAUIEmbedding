@@ -29,7 +29,7 @@
                 SemanticProperties.HeadingLevel="Level2"
                 Text="Welcome to .NET Multi-platform App UI" />
 
-            <Entry Placeholder="Søk her" />
+            <Entry Placeholder="This is a placeholder" />
 
             <Label
                 FontSize="18"
@@ -38,6 +38,7 @@
                 SemanticProperties.HeadingLevel="Level2"
                 Text="Welcome to .NET Multi-platform App UI" />
 
+            <!--  Doesn't seem to render  -->
             <CheckBox />
 
             <Label
@@ -51,12 +52,11 @@
                 Leaving this button in throws the following error when trying to embed it into Android project:
                 Microsoft.Maui.Platform.ToPlatformException: 'Microsoft.Maui.Handlers.ButtonHandler found for Microsoft.Maui.Controls.Button is incompatible'
             -->
-            <!--<Button
+            <Button
                 x:Name="CounterBtn"
-                Clicked="OnCounterClicked"
                 HorizontalOptions="Center"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Text="Click me" />-->
+                Text="Click me" />
 
         </VerticalStackLayout>
     </ScrollView>
