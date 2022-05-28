@@ -31,6 +31,9 @@ namespace MAUIEmbedding.Droid
             //Turn the Maui page into an Android View
             var view = myMauiPage.ToPlatform(mauiContext);
 
+            // Explicitly turn it into a container view
+            var containerView = myMauiPage.ToContainerView(mauiContext);
+
             //Use the Android View
             SetContentView(view);
 
