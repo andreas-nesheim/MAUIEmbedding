@@ -38,7 +38,11 @@
                 SemanticProperties.HeadingLevel="Level2"
                 Text="Welcome to .NET Multi-platform App UI" />
 
-            <!--  Doesn't seem to render  -->
+            <!--
+                Would crash on Android with the exception:
+                Java.Lang.IllegalArgumentException: 'The style on this component requires your app theme to be Theme.MaterialComponents (or a descendant).'
+                Fixed by setting Theme = Theme.MaterialComponents in MainActivity.cs
+            -->
             <CheckBox />
 
             <Label
@@ -49,8 +53,9 @@
                 Text="Final text" />
 
             <!--
-                Leaving this button in throws the following error when trying to embed it into Android project:
-                Microsoft.Maui.Platform.ToPlatformException: 'Microsoft.Maui.Handlers.ButtonHandler found for Microsoft.Maui.Controls.Button is incompatible'
+                Would crash on Android with the exception:
+                Java.Lang.IllegalArgumentException: 'The style on this component requires your app theme to be Theme.MaterialComponents (or a descendant).'
+                Fixed by setting Theme = Theme.MaterialComponents in MainActivity.cs
             -->
             <Button
                 x:Name="CounterBtn"

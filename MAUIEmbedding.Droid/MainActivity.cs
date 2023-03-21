@@ -6,7 +6,7 @@ using Microsoft.Maui.Platform;
 
 namespace MAUIEmbedding.Droid
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", MainLauncher = true, Theme = "@style/Theme.MaterialComponents.Light.DarkActionBar")]
     public class MainActivity : Activity
     {
         MauiContext mauiContext;
@@ -34,8 +34,11 @@ namespace MAUIEmbedding.Droid
             // Explicitly turn it into a container view
             var containerView = myMauiPage.ToContainerView(mauiContext);
 
-            //Use the Android View
-            SetContentView(view);
+            //Use the Android View.
+            // This will fail for some reason. Need to use the containerView.
+            //SetContentView(view);
+
+            SetContentView(containerView);
 
             // Set our view from the "main" layout resource
             //SetContentView(Resource.Layout.activity_main);
